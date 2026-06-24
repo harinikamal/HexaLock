@@ -54,8 +54,8 @@ def main():
                 print("❌ File not found")
                 continue
 
-            password = getpass.getpass("Enter password: ")
-            user = input("Enter your name/ID: ").strip() or getpass.getuser()
+            password = input("Enter password: ")
+            user = input("Enter your name/ID: ").strip() 
 
             try:
                 encrypted = encrypt_file(file_path, password)
